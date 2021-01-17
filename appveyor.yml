@@ -5,7 +5,7 @@ install:
   - cmd: choco install dotnetcore-sdk --version 3.1.404 --no-progress
   # Get the latest stable version of Node.js
   # - ps: choco install nodejs --version 14.14.0 --no-progress
-  - ps: Install-Product node 14.14.0 x64
+  - ps: Install-Product node 14.14
 
 build_script:
   - cmd: fake build -t Deploy
